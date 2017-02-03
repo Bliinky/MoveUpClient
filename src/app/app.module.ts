@@ -4,10 +4,22 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ActivityComponent } from './activity/activity.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { PriceComponent } from './price/price.component';
+import { ResourcesComponent } from './resources/resources.component';
+import { TimetableComponent } from './timetable/timetable.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent,
+    ActivityComponent,
+    GalleryComponent,
+    PriceComponent,
+    ResourcesComponent,
+    TimetableComponent
   ],
   imports: [
     BrowserModule,
