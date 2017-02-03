@@ -1,12 +1,12 @@
-import { NgModule }             from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ActivityComponent } from './activity/activity.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { PriceComponent } from './price/price.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { TimetableComponent } from './timetable/timetable.component';
+
+import { NgModule }             from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
