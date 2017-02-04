@@ -3,6 +3,6 @@ export class Notification {
   message: string;
 
   constructor() {
-    
+
   }
 }

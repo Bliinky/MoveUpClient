@@ -13,7 +13,7 @@ export class NotificationComponent implements OnInit {
 
   ngOnInit() {
      this.notification.name = "name";
-     this.notification.message = "message";
+     this.notification.message = "messageaaaaa aaaaaa aaaaaaaaaaaaaa aaaaaaa aaaaaa aaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
   }
 
 }

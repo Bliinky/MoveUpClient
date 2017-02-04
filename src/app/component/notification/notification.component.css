@@ -1,3 +1,22 @@
-notification-wrapper {
-  border: 3 px blue solid;
+.notification-wrapper {
+  border-width: 2px 2px 2px 2px;
+  border-style: solid dotted;;
+  border-color: black red;
+  padding: 0 10px;
+
 }
+
+.notification-name {
+  font-size: 35px;
+  border-bottom:1px dotted red;
+  color: #737373;
+  padding: 10px
+ }
+
+ .notification-name:hover {
+   color: orange;
+ }
+
+ .notification-message {
+   padding: 10px
+ }
