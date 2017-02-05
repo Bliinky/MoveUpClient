@@ -13,6 +13,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { PriceComponent } from './price/price.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { TimetableComponent } from './timetable/timetable.component';
+import { NotificationComponent } from './component/notification/notification.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TimetableComponent } from './timetable/timetable.component';
     GalleryComponent,
     PriceComponent,
     ResourcesComponent,
-    TimetableComponent
+    TimetableComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,
