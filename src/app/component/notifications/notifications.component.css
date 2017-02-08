@@ -1,0 +1,9 @@
+.notifications-wrapper {
+	 max-width: 100%%;
+	 position: absolute;
+	 display: block;
+}
+
+.notifications-for {
+	padding: 20px;
+}
