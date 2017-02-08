@@ -14,6 +14,7 @@ import { PriceComponent } from './price/price.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { TimetableComponent } from './timetable/timetable.component';
 import { NotificationComponent } from './component/notification/notification.component';
+import { NotificationsComponent } from './component/notifications/notifications.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NotificationComponent } from './component/notification/notification.com
     PriceComponent,
     ResourcesComponent,
     TimetableComponent,
-    NotificationComponent
+    NotificationComponent,
+    NotificationsComponent
   ],
   imports: [
     BrowserModule,
