@@ -16,6 +16,8 @@ import { TimetableComponent } from './timetable/timetable.component';
 import { NotificationComponent } from './component/notification/notification.component';
 import { NotificationsComponent } from './component/notifications/notifications.component';
 
+import {NotificationService} from "./service/notification/notification.service";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +37,7 @@ import { NotificationsComponent } from './component/notifications/notifications.
     AppRoutingModule,
     RouterModule
   ],
-  providers: [],
+  providers: [NotificationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

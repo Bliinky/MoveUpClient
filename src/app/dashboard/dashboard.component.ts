@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Observable } from 'rxjs/Observable';
+
+import { Notification } from '../model/notification';
+import { NotificationService } from '../service/notification/notification.service';
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -7,9 +12,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  notifications: Observable<Array<Notification>>;
+
+  constructor(private notificationService: NotificationService) { }
 
   ngOnInit() {
+    this.notifications = this.notificationService.getNotifications();
   }
 
 }

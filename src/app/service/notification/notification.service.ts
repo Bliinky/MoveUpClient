@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 
-import {Notification} from "../model/notification";
+import { Notification } from '../../model/notification';
 
 @Injectable()
 export class NotificationService {
