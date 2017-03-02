@@ -23,8 +23,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Deploying to GitHub Pages
+Instruction: https://github.com/angular-buch/angular-cli-ghpages
 
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
+Install: npm i -g angular-cli-ghpages
+Build project
+Run `ngh` to deploy to GitHub Pages.
 
 ## Further help
 
