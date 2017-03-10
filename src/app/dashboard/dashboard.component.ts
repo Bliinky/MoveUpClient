@@ -14,10 +14,9 @@ export class DashboardComponent implements OnInit {
 
   notifications: Observable<Array<Notification>>;
 
-  constructor(private notificationService: NotificationService) { }
+  constructor(private notificationService: NotificationService) {}
 
   ngOnInit() {
     this.notifications = this.notificationService.getNotifications();
   }
-
 }
