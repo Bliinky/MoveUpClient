@@ -11,6 +11,7 @@ import { FacebookUiResponse } from "ng2-facebook-sdk/dist/ng2-facebook-sdk";
 export class FacebookComponent implements OnInit {
 
   private logged: FacebookLoginStatus;
+  private connected: boolean;
 
   constructor(private facebookService: FacebookService) { }
 
@@ -19,16 +20,25 @@ export class FacebookComponent implements OnInit {
       appId: '1927971220769787',
       version: 'v2.8'
     });
+    this.connected = false;
+    this.loginStatus();
 
+  }
+
+  loginStatus() {
     this.facebookService.getLoginStatus()
-      .then((result: FacebookLoginStatus) => this.logged = result)
+      .then((result: FacebookLoginStatus) => {
+        this.logged = result
+        if(this.logged.authResponse) {
+          this.connected = true;
+        }
+      })
       .catch(this.handleError);
-
   }
 
   login() {
     this.facebookService.login()
-      .then((res: FacebookLoginResponse) => this.logged = res)
+      .then(() => this.loginStatus(), () => this.connected = false)
       .catch(this.handleError);
   }
 

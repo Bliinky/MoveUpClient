@@ -1,3 +1,8 @@
-<button (click)="getProfile()" class="btn btn-lg btn-primary">
+<div class="facebook-connected">
+  <button *ngIf=!connected (click)="login()" class="btn btn-lg btn-primary">
+    Connexion à facebook
+  </button>
+</div>
+<button *ngIf=connected (click)="getProfile()" class="btn btn-lg btn-primary">
   Get profile
 </button>
